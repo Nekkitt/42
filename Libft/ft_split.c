@@ -6,13 +6,13 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:02:17 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 17:51:00 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 18:19:20 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	char	**mem_free(char **str, int i)
+static char		**mem_free(char **str, int i)
 {
 	while (i-- > 0)
 		free(str[i]);
@@ -20,9 +20,9 @@ static	char	**mem_free(char **str, int i)
 	return (NULL);
 }
 
-static	size_t	ft_len(char const *str, char c, int first)
+static size_t	ft_len(char const *str, char c, int first)
 {
-	size_t	i;
+	size_t			i;
 
 	i = 0;
 	while (str[first] != c && str[first] != '\0')
@@ -33,7 +33,7 @@ static	size_t	ft_len(char const *str, char c, int first)
 	return (i);
 }
 
-static	char	**str_fill(char **str, const char *s, char c)
+static char		**str_fill(char **str, const char *s, char c)
 {
 	size_t			len;
 	unsigned int	i;
@@ -59,17 +59,17 @@ static	char	**str_fill(char **str, const char *s, char c)
 	return (str);
 }
 
-char	**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
-	char	**str;
-	int		len;
-	int		i;
+	char			**str;
+	int				len;
+	int				i;
 
 	i = 0;
 	len = 0;
 	while (s[i] != '\0')
 	{
-		while (s[i] != '\0'  && s[i] == c)
+		while (s[i] != '\0' && s[i] == c)
 			i++;
 		if (s[i] != '\0' && s[i] != c)
 		{

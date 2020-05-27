@@ -6,15 +6,15 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:03:55 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 17:55:26 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 18:21:11 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	size_t	str_size(long nb)
+static size_t	str_size(long nb)
 {
-	size_t	size;
+	size_t		size;
 
 	if (nb == 0)
 		size = 1;
@@ -30,10 +30,10 @@ static	size_t	str_size(long nb)
 	return (size);
 }
 
-static	char	*str_fill(long nb, size_t size, int sign)
+static char		*str_fill(long nb, size_t size, int sign)
 {
-	size_t	i;
-	char	*str;
+	size_t		i;
+	char		*str;
 
 	if (!(str = (char *)malloc(sizeof(char) * size)))
 		return (NULL);
@@ -57,11 +57,11 @@ static	char	*str_fill(long nb, size_t size, int sign)
 	return (str);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
-	int		sign;
-	long	nb;
-	size_t	size;
+	int			sign;
+	long		nb;
+	size_t		size;
 
 	nb = n;
 	sign = 1;
