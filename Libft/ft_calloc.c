@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:23:59 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/26 13:15:46 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 17:44:52 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ void	*ft_calloc(size_t num, size_t size)
 	if (!(mem = (char *)malloc(size * num)))
 		return (NULL);
 	ft_bzero(mem, (size * num));
-	return mem;
+	return (mem);
 }

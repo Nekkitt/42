@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/05/24 21:45:12 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/24 21:45:12 by ffalia           ###   ########.fr       */
+/*   Created: 2020/05/27 17:52:58 by ffalia            #+#    #+#             */
+/*   Updated: 2020/05/27 17:52:58 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,10 @@
 void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
-	unsigned char	*ptr;
+	unsigned char	*tmp;
 
 	i = 0;
-	ptr = s;
-	while (i < n)
-    {
-		ptr[i] = 0;
-        i++;
-    }
+	tmp = (unsigned char *)s;
+	while (i++ < n)
+		*(tmp++) = 0;
 }

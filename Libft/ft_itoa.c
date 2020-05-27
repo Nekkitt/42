@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:03:55 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 14:45:38 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 17:55:26 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char	*ft_itoa(int n)
 	int		sign;
 	long	nb;
 	size_t	size;
-	
+
 	nb = n;
 	sign = 1;
 	if (nb < 0)

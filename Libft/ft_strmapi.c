@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:02:51 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 16:35:16 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 17:25:23 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,22 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char			*str;
-	size_t			len;
-	unsigned int	i;
+	char				*temp;
+	unsigned int		i;
 
-	i = 0;
-	len = ft_strlen(s);
-	if (!(str = (char *)malloc(sizeof(char) * (len + 1))))
+	if (!s || !f)
 		return (NULL);
-	while (i < len)
+	i = 0;
+	while (s[i])
+		i++;
+	if (!(temp = (char *)malloc(sizeof(char) * (i + 1))))
+		return (NULL);
+	i = 0;
+	while (s[i])
 	{
-		str[i] = f(i, str[i]);
+		temp[i] = f(i, s[i]);
 		i++;
 	}
-	str[i] = '\0';
-	return (str);
+	temp[i] = '\0';
+	return (temp);
 }

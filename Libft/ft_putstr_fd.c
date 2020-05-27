@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:02:05 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 11:57:18 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 17:49:13 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
-	if ( fd < 0 || !s)
+	if (fd < 0 || !s)
 		return ;
 	i = 0;
 	while (s[i])

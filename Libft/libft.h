@@ -6,13 +6,12 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:27:58 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 13:18:10 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 16:18:18 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 # include <stdlib.h>
 # include <unistd.h>
 

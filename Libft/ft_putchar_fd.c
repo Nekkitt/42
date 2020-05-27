@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:01:41 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/26 12:10:00 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 17:48:08 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_putchar_fd(char c, int fd)
 {
 	if (fd < 0)
 		return ;
-	else 
+	else
 		write(fd, &c, 1);
 }

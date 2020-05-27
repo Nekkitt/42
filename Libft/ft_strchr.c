@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:26:20 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 13:54:10 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 15:42:25 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,16 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
+	if (c == 0)
+		return ((char *)s + ft_strlen(s));
 	while (s[i] != '\0')
 	{
-		if (s[i] == (char)c)
-			return ((char*)(s + i));
+		if (s[i] == c)
+			return ((char*)s + i);
 		i++;
 	}
-	if (s[i] == (char)c)
-		return ((char*)(s + i));
 	return (NULL);
 }

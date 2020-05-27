@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:02:17 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 16:31:21 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 17:51:00 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static	size_t	ft_len(char const *str, char c, int first)
 	size_t	i;
 
 	i = 0;
-	while (str[first] != c && str[first] != '\0' )
+	while (str[first] != c && str[first] != '\0')
 	{
 		first++;
 		i++;
@@ -38,12 +38,12 @@ static	char	**str_fill(char **str, const char *s, char c)
 	size_t			len;
 	unsigned int	i;
 	unsigned int	j;
-	
+
 	i = 0;
 	j = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] != '\0' && s[i] != '\0')
+		if (s[i] != '\0' && s[i] != c)
 		{
 			len = ft_len(s, c, i);
 			str[j] = ft_substr(s, i, len);
