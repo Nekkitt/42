@@ -6,11 +6,11 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:25:42 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 15:36:17 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/26 13:38:10 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

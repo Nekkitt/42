@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:01:49 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 16:00:46 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 13:53:55 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s, fd);
+	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }
