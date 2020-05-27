@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:02:17 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 12:52:24 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 14:46:06 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,8 @@ static	char	**str_fill(char **str, const char *s, char c)
 	unsigned int	i;
 	unsigned int	j;
 	
-	i == 0;
-	j == 0;
+	i = 0;
+	j = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] != '\0' && s[i] != '\0')

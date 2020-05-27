@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:26:15 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 13:53:40 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/26 13:37:11 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned int			i;
 
 	i = 0;
-	if ((unsigned char *)dst)) > (((unsigned char *)src)
+	if (((unsigned char *)dst)[i] > ((unsigned char *)src)[i])
 		while (len-- > 0)
 			((unsigned char *)dst)[len] = ((unsigned char *)src)[len];
 	else

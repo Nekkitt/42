@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:03:55 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/26 17:30:02 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 14:45:38 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static	char	*str_fill(long nb, size_t size, int sign)
 	if (sign == 2)
 		str[i] = '-';
 	i = size - 1;
-	string[i] = '\0';
+	str[i] = '\0';
 	i--;
 	if (nb >= 10)
 	{

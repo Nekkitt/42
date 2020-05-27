@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:26:56 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 13:54:59 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/26 13:45:39 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	n;
 
 	n = ft_strlen(s);
-	while (n >= 0)
+	while ((int)n >= 0)
 	{
-		if (s[n] == (char)c)
-			return ((char*)(s + n));
+		if (s[n] == c)
+			return ((char *)(s + n));
 		n--;
 	}
 	return (NULL);
