@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/26 12:02:17 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 14:46:06 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 16:31:21 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static	char	**mem_free(char **str, int i)
 {
-	while (i > 0)
+	while (i-- > 0)
 		free(str[i]);
 	free(str);
 	return (NULL);
