@@ -6,7 +6,7 @@
 /*   By: ffalia <ffalia@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/24 21:26:06 by ffalia            #+#    #+#             */
-/*   Updated: 2020/05/27 13:53:35 by ffalia           ###   ########.fr       */
+/*   Updated: 2020/05/27 15:28:13 by ffalia           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 
-	if (!dst)
+	if (!dst && !src)
 		return (NULL);
 	i = 0;
 	while (i < n)
